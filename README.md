@@ -28,11 +28,11 @@ This is the project I completed during my React Nanodegree by Udacity using Reac
 * An option to restart the quiz
 * An option to go back to thr Deck
 5. **New Deck View**
-*An option to enter in the title for the new deck
-*An option to submit the new deck title
+* An option to enter in the title for the new deck
+* An option to submit the new deck title
 6. **New Question View**
-*An option to enter in the question
-*An option to enter in the answer
-*An option to submit the new question
+* An option to enter in the question
+* An option to enter in the answer
+* An option to submit the new question
   
-#Used AsuncStorage to store the data
+# Used AsuncStorage to store the data
