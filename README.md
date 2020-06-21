@@ -10,8 +10,8 @@ This is the project I completed during my React Nanodegree by Udacity using Reac
 
 ## Information annd Functionality of the App
 1. **Deck List View (Default View)**
-  displays the title of each Deck
-  displays the number of cards in each deck
+displays the title of each Deck
+displays the number of cards in each deck
 2. **Individual Deck View**
   displays the title of the Deck
   displays the number of cards in the deck
