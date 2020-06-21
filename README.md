@@ -4,7 +4,7 @@ This is the project I completed during my React Nanodegree by Udacity using Reac
 ## Steps to run
 1. Clone the Repository.
 2. Run npm install to install the packages written in package.json.
-3. Run npm start to run the project in the browser. 
+3. Run npm run android to run the project and it will generate a QR code.
 4. Install expo in your phone or use any android or ios emulator
 5. If using your device,scan the code generated using the scanner in expo.
 
@@ -36,3 +36,4 @@ This is the project I completed during my React Nanodegree by Udacity using Reac
 * An option to submit the new question
   
 ## Used AsyncStorage to store the data
+### Tested for Android device
