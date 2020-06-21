@@ -35,4 +35,4 @@ This is the project I completed during my React Nanodegree by Udacity using Reac
 * An option to enter in the answer
 * An option to submit the new question
   
-# Used AsuncStorage to store the data
+## Used AsyncStorage to store the data
