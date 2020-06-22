@@ -44,9 +44,9 @@ const home = () =>{
 
 export default class App extends Component {
 
-  // componentDidMount() {
-  //   setNotification()
-  // }
+  componentDidMount() {
+    setNotification()
+  }
 
   render(){
   return (
@@ -56,9 +56,9 @@ export default class App extends Component {
         <Stack.Screen name="SingleDeck" component={SingleDeckView} options={{title:""}}/>
         <Stack.Screen name="AddCard" component={AddQnA} options={{title:"Add Card"}} />
         {/* <Stack.Screen name="Quiz" component={quiz} options={{title:"Quiz"}} /> */}
-        <Stack.Screen name="Question" component={Question} />
-    <Stack.Screen name="Answer" component={Answer} />
-        <Stack.Screen name="Result" component={Result} options={{title:"Result"}} />
+        <Stack.Screen name="Question" component={Question} options={{title:"Quiz",headerLeft:null}} />
+    <Stack.Screen name="Answer" component={Answer} options={{title:"Quiz",headerLeft:null}}/>
+        <Stack.Screen name="Result" component={Result} options={{title:"Result",headerLeft:null}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

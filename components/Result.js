@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {getCorrectAns,resetResult} from '../utils/Data';
+import {clearNotification} from '../utils/notificationHelper';
 class Result extends Component{
     state={
         correctAns:"",
@@ -13,13 +14,13 @@ class Result extends Component{
             if(correct)this.setState({showResult:true,correctAns:correct})
             else this.setState({showResult:true,correctAns:0})
         })
+        clearNotification()
+        resetResult()
     }
     restart =() =>{
-        resetResult();
         this.props.navigation.navigate('Question',{restart:true,nextQues:false})
     }
     backToDeck = () =>{
-        resetResult();
         this.props.navigation.navigate('SingleDeck')
     }
     render(){
@@ -56,10 +57,12 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: "#fff",
         alignItems: 'center',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-around',
+        padding:50
       },
       heading:{
-          fontSize:30
+          fontSize:30,
+          fontWeight:"bold"
       },
       resultTxt:{
           fontSize:20
